@@ -16,6 +16,7 @@ class Mysql {
 
   async query(qry) {
     const conn = await this.pool.getConnection()
+    console.log(qry)
     try {
       this.qry = qry
       const [rows] = await conn.query(this.qry)
