@@ -1,6 +1,11 @@
+import db from '../db'
+
 const controll = {
-  test: async (ctx) => {
-    ctx.body = 1
+  show: async (ctx) => {
+    const { idx } = ctx.request.query
+
+    console.log(idx)
+    console.log(db)
   },
 }
 

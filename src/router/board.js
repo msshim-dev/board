@@ -3,6 +3,6 @@ import controll from '../controller/board'
 
 const router = new Router()
 
-router.get('/', controll.test)
+router.get('/', controll.show)
 
 export default router
