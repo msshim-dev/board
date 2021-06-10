@@ -1,7 +1,7 @@
 import db from '../db'
 
 const controll = {
-  show: async (ctx) => {
+  getcomment: async (ctx) => {
     const { idx } = ctx.request.query
 
     ctx.body = idx
@@ -10,6 +10,11 @@ const controll = {
     console.log(idx)
 
     return db.getcomment(idx)
+  },
+
+  insertcomment: async (ctx) => {
+    const { parentidx, commentidx, txt } = ctx.request.body
+    return db.getcomment(parentidx, commentidx, txt)
   },
 }
 

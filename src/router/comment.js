@@ -3,6 +3,6 @@ import controll from '../controller/comment'
 
 const router = new Router()
 
-router.get('/comment', controll.show)
+router.get('/comment', controll.getcomment)
 
 export default router

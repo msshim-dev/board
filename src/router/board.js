@@ -3,6 +3,8 @@ import controll from '../controller/board'
 
 const router = new Router()
 
-router.get('/all', controll.all)
+router.get('/getboard', controll.getboard)
+
+router.post('/insertboard', controll.insert)
 
 export default router
