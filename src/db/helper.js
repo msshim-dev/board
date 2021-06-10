@@ -1,8 +1,8 @@
 import mysql from 'mysql2/promise'
 
 const connections = {
-  host: 'db',
-  port: 3306,
+  host: 'localhost',
+  port: 3308,
   user: 'user',
   password: '1111',
   database: 'board',
